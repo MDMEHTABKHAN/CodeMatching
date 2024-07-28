@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=10">
+	<title>Code Matching Interface</title>
+	<link rel="shortcut icon" href="icon.png" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+	
+	<div class="container">
+		<div class="header">
+			<h2>Fill the missing words to match the output.</h2>
+		</div>
+		<div class="code-block">
+			<pre>
+num = <select id="num-initial">
+		<option value="9">9</option>
+		<option value="10">10</option>
+		<option value="12">12</option>
+		<option value="13">13</option>
+	</select>
+while num > 0:
+	<select id="num-operation">
+		<option value="num-=3">num -= 3</option>
+		<option value="num+=3">num += 3</option>
+		<option value="num-=1">num -= 1</option>
+	</select>
+	print(num)
+			</pre>
+		</div>
+		<div class="output">
+			<h3>Output</h3>
+			<div id="output">9 6 3 0</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
